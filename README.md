@@ -14,10 +14,13 @@ Landing page moderna con sensación hogareña y nostálgica: historia, carta de 
 - `script.js` — reseñas, navegación móvil, botón compartir, animaciones
 
 ## Cómo editar
-- **Número de WhatsApp:** busca `5219999999999` en `index.html` y reemplázalo por el número real (formato: 52 + 1 + 10 dígitos).
-- **Sabores:** edita las tarjetas `<article class="flavor">` en `index.html`.
-- **Reseñas:** edita el arreglo `REVIEWS` en `script.js`.
-- **Celebridades / fotos:** sección `#celebridades` en `index.html`.
+- **Número de WhatsApp:** cambia la constante `WA` al inicio de `script.js` (formato: 52 + 1 + 10 dígitos). También reemplaza `5219999999999` en `index.html`.
+- **La Carta (productos):** edita el arreglo `MENU` en `script.js`. Cada item tiene `img`, `name`, `price`, `desc`. Pon la foto del producto en `/images` y usa su nombre en `img`. Al tocar una tarjeta se abre un popup con la foto grande.
+- **Celebridades:** edita el arreglo `CELEBS` en `script.js`. Agrega `{ img, name, note }` con la foto en `/images`. Los recuadros "Agrega aquí la foto" son marcadores `{ __add:true }` — bórralos al llenar el carrusel.
+- **Reseñas:** edita el arreglo `REVIEWS` en `script.js` (carrusel en la sección Visítanos).
+
+## Fotos
+Todas las imágenes reales están en `/images` (fachada histórica de 1907, fotos vintage del fundador e interior, y fotografía de producto). Reemplázalas por fotos propias cuando quieras — conserva los mismos nombres de archivo o actualiza las rutas.
 
 ## Desarrollo local
 Abre `index.html` en el navegador, o:
